@@ -1,0 +1,11 @@
+include aladin_lite_react_component/aladin_lite_react_component.min.js
+include aladin_lite_react_component/aladin_lite_react_component.min.js.map
+include aladin_lite_react_component/async-*.js
+include aladin_lite_react_component/async-*.js.map
+include aladin_lite_react_component/*-shared.js
+include aladin_lite_react_component/*-shared.js.map
+include aladin_lite_react_component/metadata.json
+include aladin_lite_react_component/package-info.json
+include README.md
+include LICENSE
+include package.json

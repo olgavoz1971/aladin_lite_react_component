@@ -1,0 +1,220 @@
+{
+  "src/lib/components/AladinLiteReactComponent.react.js": {
+    "description": "",
+    "displayName": "AladinLiteReactComponent",
+    "methods": [
+      {
+        "name": "scriptLoaded",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "updateCatalog",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "updateSelectedStar",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "handleFieldClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleDoubleClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleStarClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "object",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Aladin window width",
+        "defaultValue": {
+          "value": "500",
+          "computed": false
+        }
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Aladin window height",
+        "defaultValue": {
+          "value": "500",
+          "computed": false
+        }
+      },
+      "target": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The target to display.",
+        "defaultValue": {
+          "value": "'03 47 00.00 +24 07 00.0'",
+          "computed": false
+        }
+      },
+      "fov": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The FOV of the display.",
+        "defaultValue": {
+          "value": "2",
+          "computed": false
+        }
+      },
+      "stars": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "ra": {
+                "name": "number",
+                "required": true
+              },
+              "dec": {
+                "name": "number",
+                "required": true
+              },
+              "name": {
+                "name": "string",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "list of Marked objects.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "selectedStar": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "ra": {
+              "name": "number",
+              "required": false
+            },
+            "dec": {
+              "name": "number",
+              "required": false
+            },
+            "name": {
+              "name": "string",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "clickedCoordinates": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "ra": {
+              "name": "number",
+              "required": true
+            },
+            "dec": {
+              "name": "number",
+              "required": true
+            }
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "doubleClickedCoordinates": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "ra": {
+              "name": "number",
+              "required": true
+            },
+            "dec": {
+              "name": "number",
+              "required": true
+            }
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}
