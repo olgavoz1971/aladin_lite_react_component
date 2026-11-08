@@ -1,3 +1,5 @@
+include aladin_lite_react_component/aladin-lite.js
+include aladin_lite_react_component/aladin-lite.COPYING
 include aladin_lite_react_component/aladin_lite_react_component.min.js
 include aladin_lite_react_component/aladin_lite_react_component.min.js.map
 include aladin_lite_react_component/async-*.js

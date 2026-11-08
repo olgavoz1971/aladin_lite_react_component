@@ -66,6 +66,13 @@ _js_dist.extend(
 _js_dist.extend(
     [
         {
+            # Aladin Lite 3.8.1 is an ES module. Dash must serve the file,
+            # and the React component imports it. It is not a classic script.
+            'relative_package_path': 'aladin-lite.js',
+            'namespace': package_name,
+            'dynamic': True,
+        },
+        {
             'relative_package_path': 'aladin_lite_react_component.min.js',
     
             'namespace': package_name
