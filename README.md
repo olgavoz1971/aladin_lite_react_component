@@ -2,7 +2,32 @@
 
 aladin lite react component is a Dash component library.
 
-Project Description
+## Version 0.0.4
+
+The component embeds [Aladin Lite](https://github.com/cds-astro/aladin-lite) 3.8.1. Dash serves `aladin_lite_react_component/aladin-lite.js` from this package. The page does not load the viewer from `aladin.u-strasbg.fr` or `aladin.cds.unistra.fr`. Aladin Lite 3.8.1 is GPL-3; its licence is `aladin_lite_react_component/aladin-lite.COPYING`. Leave the Aladin logo in the view.
+
+The sky opens on **DSS coloured China**:
+
+`https://hips.china-vo.org/m/CDS_P_DSS2_color`
+
+Aladin's own survey menu stays in place. Three mirror rows are added to it:
+
+| Name | URL |
+| --- | --- |
+| DSS coloured China | `https://hips.china-vo.org/m/CDS_P_DSS2_color` |
+| 2MASS coloured China | `https://hips.china-vo.org/m/CDS_P_2MASS_color` |
+| SDSS9 coloured China | `https://hips.china-vo.org/m/CDS_P_SDSS9_color` |
+
+The ESA copy of DSS coloured, `https://skies.esac.esa.int/DSSColor`, is left commented in `src/lib/components/AladinLiteReactComponent.react.js`. These addresses are direct HiPS URLs. A CDS name such as `P/DSS2/color` asks the Strasbourg server for the tiles.
+
+After editing that source file, rebuild and reinstall. The running app serves the built `aladin_lite_react_component.min.js`, not the React source:
+
+```
+$ npm run build:js
+$ pip install --no-deps --force-reinstall .
+```
+
+Then reload the page.
 
 Get started with:
 1. Install Dash and its dependencies: https://dash.plotly.com/installation
@@ -74,7 +99,7 @@ If you have selected install_dependencies during the prompt, you can skip this p
 
 3. Test your tarball by copying it into a new environment and installing it locally:
     ```
-    $ pip install aladin_lite_react_component-0.0.1.tar.gz
+    $ pip install aladin_lite_react_component-0.0.4.tar.gz
     ```
 
 4. If it works, then you can publish the component to NPM and PyPI:
